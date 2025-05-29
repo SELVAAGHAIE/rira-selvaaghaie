@@ -1,0 +1,21 @@
+
+body.dark{
+--bgColor:#292F45;
+}
+body.light{
+--bgColor:#E1E9EE;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+margin: auto;
+  background-color: var(--bgColor);
+  border-radius: 20px;
+  width: 600px;
+  padding: 30px;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
+  footer{
+    color: var(--textColor);
+  }
+}
+

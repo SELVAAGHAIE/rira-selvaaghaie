@@ -1,0 +1,94 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  color: var(--textColor);
+  padding-bottom: 2.3rem;
+
+  .logo {
+    display: flex;
+    gap: 10px;
+    font-size: 24px;
+    font-family: sans-serif;
+    font-weight: bold;
+
+    .CurrencyIcon {
+      background-color: #565e9e;
+      border-radius: 50%;
+      color: white;
+      width: 20px;
+      height: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 13px;
+    }
+  }
+
+  .settings-wrapper {
+    position: relative;
+
+    .settings-button {
+      border: none;
+      background: transparent;
+      border-radius: 8px;
+      cursor: pointer;
+      color: var(--textColor);
+      font-size: 24px;
+    }
+
+    .dropdown-menu {
+      position: absolute;
+      top: 40px;
+      right: 0;
+      background: var(--bgColor);
+      padding: 15px;
+      width: 200px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      z-index: 10;
+
+      .section {
+        margin-bottom: 15px;
+
+        .section-title {
+          font-weight: bold;
+          margin-bottom: 5px;
+        }
+
+        .toggle-buttons {
+          display: flex;
+          gap: 10px;
+
+          button {
+            flex: 1;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            background: none;
+            cursor: pointer;
+            color: var(--textColor);
+
+            &.active {
+              border-color: #00aaff;
+              color: #00aaff;
+            }
+          }
+        }
+      }
+
+      .exit-option {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        cursor: pointer;
+        color: var(--textColor);
+
+        &:hover {
+          color: red;
+        }
+      }
+    }
+  }
+}

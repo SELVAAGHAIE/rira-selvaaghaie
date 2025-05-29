@@ -1,0 +1,48 @@
+body.dark{
+--inputBgColor:#3F4861
+}
+
+body.light{
+--inputBgColor:#CDD9E0
+}
+
+.exchange-section {
+  padding-top: 20px;
+
+
+  .conversion-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--inputBgColor);
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+
+    .currency {
+      // font-weight: bold;
+      // margin-right: 10px;
+      width: 200px;
+    }
+
+    input {
+      background: transparent;
+      border: none;
+      // border-bottom: 1px solid #888;
+      color: var(--textColor);
+      font-size: 14px;
+      width: 100%;
+      outline: none;
+      text-align: right;
+
+      &::placeholder {
+        color: var(--textColor);
+        text-align: end;
+        font-weight: lighter !important; 
+      }
+    }
+   span{
+    color: var(--textColor);
+   }
+  }
+}
